@@ -15,13 +15,9 @@ const start_at_control = document.getElementById(
 
 const step_control = document.getElementById("step") as HTMLInputElement;
 
-start_at_control?.addEventListener("change", () => {
-  update_count_and_reset_counter();
-});
+start_at_control?.addEventListener("change", update_count_and_reset_counter);
 
-step_control?.addEventListener("change", () => {
-  update_count_and_reset_counter();
-});
+step_control?.addEventListener("change", update_count_and_reset_counter);
 
 const count_button = document.querySelector(
   ".count_button",
