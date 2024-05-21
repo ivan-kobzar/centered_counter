@@ -1,4 +1,4 @@
-import { factory } from "./factory";
+import { factory } from "./utils/factory";
 
 let count = factory(0, 1);
 

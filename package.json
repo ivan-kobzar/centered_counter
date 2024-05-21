@@ -10,9 +10,12 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "format": "prettier --write .",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "test:ui": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",
     "@vitest/coverage-istanbul": "^1.6.0",
